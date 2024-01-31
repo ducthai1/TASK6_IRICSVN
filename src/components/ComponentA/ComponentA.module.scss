@@ -1,0 +1,86 @@
+.formInputContainer {
+    height: 100px;
+    padding-left: 6%;
+    .formInput {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        .inputLink {
+            outline: none;
+            width: 30%;
+            height: 60px;
+            padding-left: 20px;
+            padding-right: 20px;
+            margin-right: 20px;
+            color: #000;
+            font-size: 16px;
+            border-radius: 30px;
+            -webkit-border-radius: 30px;
+            -moz-border-radius: 30px;
+            -ms-border-radius: 30px;
+            -o-border-radius: 30px;
+            border: 1px solid rgb(222, 212, 61);
+            box-shadow: 0px 0px 8px #cecc53;
+        }
+    
+        .btnSubmitLink {
+            width: 6%;
+            height: 60px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 30px;
+            -webkit-border-radius: 30px;
+            -moz-border-radius: 30px;
+            -ms-border-radius: 30px;
+            -o-border-radius: 30px;
+            background-color: #f9d205;
+            color: #000000; 
+        }
+
+        .btnActivated {
+            border: 1px solid rgb(222, 212, 61);
+            box-shadow: 0px 0px 8px #cecc53;
+            &:hover {
+                cursor: pointer;
+                box-shadow: 0 0 6px 1px #faea9d79;
+                background-color: #faea9d;
+            }
+        }
+
+        .btnDisabled {
+            background-color: #575757;
+            color: #ffffff;
+            box-shadow: 0px 0px 4px #979797;
+            &:hover {
+                cursor: no-drop;
+            }
+        }
+    }
+    
+}
+
+.instructions {
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    background: #e93838;
+    color: #fff;
+    position: relative;
+    line-height: 1.5rem;
+    padding: 10px 0  10px 10px;
+    margin: 0 23% 10px;
+}
+
+.instructions > svg {
+    margin-right: 0.25rem;
+}
+
+.offScreen {
+    position: absolute;
+    left: -9999px;
+}
+
+.hide {
+    display: none;
+}
